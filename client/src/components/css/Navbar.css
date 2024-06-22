@@ -1,0 +1,39 @@
+.cont{
+    width: 100%;
+    height: 4.5rem;
+    padding: 0 4.5rem;
+}
+.search_bar{
+    background-color: #F2F2F2;
+    padding: 0 0.75rem;
+    width: 22.5rem !important;
+    height: 2.625rem !important;
+    border-radius: 3.25rem;
+}
+input{
+    background-color: #F2F2F2;
+    outline: none;
+    width: 17rem;
+    height: 1.188rem;
+    color: #5C5C5C;
+}
+button{
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 3.25rem !important;
+    margin: 0 0.875rem !important;
+}
+i{
+    color: #7A7A7A;
+}
+button,i,input{
+    border:none;
+}
+.r_most{
+    padding-left: 0.5rem !important;
+   
+}
+.nav-sp{
+    width: 1rem !important;
+}
+

@@ -1,0 +1,94 @@
+.card-img-top{
+    height: 34rem !important;
+}
+/*Like popup*/
+.ex-card{
+    position: relative;
+  }
+  .f-left{
+    position: relative;
+    z-index: 4;
+}
+
+        .f-left i{
+            cursor: pointer;
+            z-index: 4;
+        }
+         .f-left .solid-heart {
+            position: absolute;
+            font-size: 1.8rem;
+            left: 1.2rem;
+             top: 0.3rem;
+            color: #fe424d;
+            
+            transition: transform ease 0.2s;
+            transform: scale(0);
+            
+            }
+            .main-card{
+                position: relative;
+            }
+            .hidden-card {
+                position: absolute;
+                left: 30.5rem;
+                top: 0;
+                transition: right 0.5s;
+                height: 46.125rem !important;
+                z-index: -1;
+                background-color: rgb(237, 238, 240);
+            }
+            .view-comments{
+                overflow-y: scroll;
+                height: 38.125rem !important;
+            }
+            .view-comments p{
+                border:2px solid rgb(202, 190, 190);
+                border-radius: 12px;
+                font-size: 1.05rem;
+            }
+            .show-card {
+                left: 58rem;
+                z-index: 1;
+            }
+            @keyframes like {
+            from {
+                transform: scale(1);
+            }
+            27% {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1);
+            }
+            }
+@media (max-width:600px) {
+    .card-title{
+        font-size: 18px;
+    }
+    .post-desc,.c-type{
+        font-size: 14px;
+    }
+    .prof_des{
+        font-size: 10px !important;
+        width: 170px;
+    }
+    .prof_name{
+        font-size: 14px;
+        position: absolute;
+        bottom: 12%;
+        left: 19%;
+    }
+    .card{
+        position: relative;
+    }
+    .p-views{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 5%;
+        left: 14%;
+        font-size: 14px;
+        width: 5rem;
+    }
+}

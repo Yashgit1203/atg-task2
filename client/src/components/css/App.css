@@ -1,0 +1,9 @@
+.custom-input {
+  border-radius: 0 !important;
+  border: 1px solid #d9d9db;
+  background: #f7f8fa;
+  height: 2.5rem;
+}
+.modal-header-postform{
+  width: 50rem !important;
+}

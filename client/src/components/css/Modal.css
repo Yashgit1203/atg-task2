@@ -1,0 +1,15 @@
+.trans {
+    background-color: #fff !important;
+    color: #8a8a8a !important;
+    padding: 0.5rem !important;
+  }
+  .modal-title{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  .modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
