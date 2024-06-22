@@ -2,11 +2,12 @@
 client/node_modules/
 api/node_modules/
 
-# Ignore build directories
-client/build/
-api/build/
+# # Ignore build directories
+# client/build/
+# api/build/
 
 # Ignore other system files
 .DS_Store
 api/.env
 node_modules/
+.vercel
