@@ -19,7 +19,7 @@ const Home = () => {
   const [allposts, setallpost] = useState([]);
     useEffect(()=>{
         (async ()=>{
-            const res =  await axios.get("http://localhost:8080/posts");
+            const res =  await axios.get("https://atg-task2.onrender.com/posts");
             console.log(res.data.posts);
             setallpost(res.data.posts);
         })();
@@ -39,7 +39,7 @@ const Home = () => {
   const handleSubmit2 = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/posts', formData);
+      const response = await axios.post('https://atg-task2.onrender.com/posts', formData);
       setPosts([...posts, response.data]);
       document.querySelector(".btn-close-2").click();
     } catch (error) {
@@ -49,7 +49,7 @@ const Home = () => {
   const handleLogout = async () =>{
     try {
       if (location.pathname === '/logout') {
-        const response = await axios.get('http://localhost:8080/logout');
+        const response = await axios.get('https://atg-task2.onrender.com/logout');
         console.log(response);
         navigate('/posts');
       }
@@ -62,10 +62,10 @@ const Home = () => {
     try {
       let response = "";
       if (location.pathname === '/signup') {
-        response = await axios.post('http://localhost:8080/signup', userData);
+        response = await axios.post('https://atg-task2.onrender.com/signup', userData);
       }
       if (location.pathname === '/login') {
-        response = await axios.post('http://localhost:8080/login', userData);
+        response = await axios.post('https://atg-task2.onrender.com/login', userData);
       }
       
       setUser(response.data.user);
@@ -80,7 +80,7 @@ const Home = () => {
 
   const handleDelete = async (postId) => {
     try {
-      const response = await axios.post('http://localhost:8080/posts/delete', { id: postId });
+      const response = await axios.post('https://atg-task2.onrender.com/posts/delete', { id: postId });
       // setPosts(posts.filter(post => post.id !== postId));
       navigate('/posts');
       window.location.reload();

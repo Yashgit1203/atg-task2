@@ -13,7 +13,7 @@ const Post = ({ post, user, handleDelete }) => {
 
   const fetchComments = async (postId) => {
     try {
-      const response = await axios.post('http://localhost:8080/comment/all', {
+      const response = await axios.post('https://atg-task2.onrender.com/comment/all', {
         postId: postId,a:"ddd"
       });
       setComments(response.data.allcomments);
@@ -30,7 +30,7 @@ const Post = ({ post, user, handleDelete }) => {
   const handleLike = async () => {
     if (!liked) {
       try {
-        const response = await axios.post('http://localhost:8080/posts/like', { postId: post._id });
+        const response = await axios.post('https://atg-task2.onrender.com/posts/like', { postId: post._id });
         setLikes(response.data.likes);
         setLiked(true);
       } catch (error) {
@@ -42,7 +42,7 @@ const Post = ({ post, user, handleDelete }) => {
   const handleCommentSubmit = async (event, postId) => {
     event.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/comment', {
+      const response = await axios.post('https://atg-task2.onrender.com/comment', {
         postId: postId,
         comment: comment,
         userId: user._id,

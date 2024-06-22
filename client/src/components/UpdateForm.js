@@ -27,7 +27,7 @@ const UpdateForm = ({ post }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8080/posts/edit', formData);
+      const response = await axios.post('https://atg-task2.onrender.com/posts/edit', formData);
       console.log(response);
       document.querySelector(".btn-close-3").click();
       
