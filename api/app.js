@@ -83,3 +83,5 @@ if (process.env.NODE_ENV === "production") {
 app.listen(8080, () => {
     console.log('Server started successfully at port 8080');
 });
+
+module.exports = app;
