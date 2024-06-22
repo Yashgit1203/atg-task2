@@ -15,7 +15,6 @@ router
 router
 .route("/edit")
 .post(postController.updateListing)
-router
 
 router
 .route("/like")

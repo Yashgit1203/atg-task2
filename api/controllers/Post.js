@@ -36,7 +36,8 @@ module.exports.updateListing = async (req,res)=>{
     image:url,
     description:description
   });
-
+  res.json({success:"Listing updated successfully",listing});
+   
 }
 module.exports.addlikes = async (req,res)=>{
   const { postId } = req.body;
