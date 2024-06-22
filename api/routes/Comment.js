@@ -8,6 +8,6 @@ router.post("/comment",reviewController.addComment)
 router.post("/comment/all",reviewController.viewComment)
 
 //Comment Delete Route
-router.post("/comment/delete",reviewController.destroyComment);
+// router.post("/comment/delete",reviewController.destroyComment);
 
 module.exports = router;
